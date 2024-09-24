@@ -14,19 +14,16 @@
   }
   .nav1, .nav2, .nav3{
     background-color: #292929;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  .nav11{
-    margin: 0;
     padding: 10px;
+    margin-bottom: 10px;
   }
   .nav11 ul{
     display: flex;
     list-style-type: none;
     justify-content: space-between;
+    align-items: center;
     background-color: #ffe7cf;
-    padding: 5px;
+    padding: 5px 10px 10px ;
   }
   .nav11 li{
     display: inline;
@@ -52,12 +49,42 @@
   .nav11 a:hover::after{
     transform: scaleX(1);
   }
-  .login{
+  .nav11 .login-btn{
     background-color: #10a1c9;
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
     cursor: pointer;
+  }
+
+  /* styling the 2nd nav */
+  .nav22{
+    background-color: #d0c60bd6;
+    width: 175px;
+    padding: 15px;
+  }
+  .nav22 ul{
+    list-style-type: none;
+    padding: 0px;
+  }
+  .nav22 li{
+    padding:5px;    
+  }
+  .nav22 a{
+    text-decoration: none;
+    color: #750e0e;
+  }
+  .nav22 button{
+    background-color: #750e0e56;
+    color: whitesmoke;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  .nav22 li:hover{
+    background-color: #d0c60b;
   }
 </style>
 <body>
@@ -69,31 +96,37 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Product</a></li>
         <li>
-          <button class="login" type="submit">Login</button>
+          <button class="login-btn" type="submit">Login</button>
         </li>
       </ul>
     </nav>
   </div>
   <div class="nav2">
     <h1>V2: nav</h1>
-    <nav>
-      <ul class="nav22">
+    <nav class="nav22">
+      <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Product</a></li>
       </ul>
-      <button type="submit">Login</button>
+      <button class="login-btn" type="submit">Login</button>
     </nav>
   </div>
   <div class="nav3">
     <h1>V3: nav</h1>
-    <nav>
-      <ul class="nav33">
+    <nav class="nav33">
+      <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Product</a></li>
-        <p><a href="#">Our Story Team Contact</a></p>
-        <li><button type="submit">Login</button></li>
+        <li class="dropdown">
+            <a href="#">About</a>
+          <div class="dropdown-content">
+            <a href="#">Our story</a>
+            <a href="#">Team</a>
+            <a href="#">Contact</a>
+          </div>
+        </li>
+        <li><a href="#">Products</a></li>
+        <li><button class="login-btn" type="submit">Login</button></li>
       </ul>
     </na
   </div>
