@@ -17,24 +17,67 @@
     padding: 20px;
     margin-bottom: 20px;
   }
-  
+  .nav11{
+    margin: 0;
+    padding: 10px;
+  }
+  .nav11 ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    background-color: #ffe7cf;
+    padding: 5px;
+  }
+  .nav11 li{
+    display: inline;
+    /* margin-top: 1.75%; */
+  }
+  .nav11 a{
+    text-decoration: none;
+    color: #292929;
+    padding: 5px 10px;
+    position: relative;
+  }
+  .nav11 a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #10a1c9;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  .nav11 a:hover::after{
+    transform: scaleX(1);
+  }
+  .login{
+    background-color: #10a1c9;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
 </style>
 <body>
   <div class="nav1">
     <h1>V1: nav</h1>
-    <nav>
+    <nav  class="nav11">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Product</a></li>
-        <button type="submit">Login</button>
+        <li>
+          <button class="login" type="submit">Login</button>
+        </li>
       </ul>
     </nav>
   </div>
   <div class="nav2">
     <h1>V2: nav</h1>
     <nav>
-      <ul>
+      <ul class="nav22">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Product</a></li>
@@ -45,7 +88,7 @@
   <div class="nav3">
     <h1>V3: nav</h1>
     <nav>
-      <ul>
+      <ul class="nav33">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Product</a></li>
