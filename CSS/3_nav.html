@@ -62,6 +62,7 @@
     background-color: #d0c60bd6;
     width: 175px;
     padding: 15px;
+    margin: 0;
   }
   .nav22 ul{
     list-style-type: none;
@@ -80,11 +81,61 @@
     font-weight: 500;
     margin-bottom: 10px;
     padding: 5px;
+    border: none;
     border-radius: 5px;
     width: 100%;
   }
   .nav22 li:hover{
     background-color: #d0c60b;
+  }
+  .nav22 .login-btn:hover{
+    background-color: #d0c60bfe;
+    color: #750e0e;
+    cursor: pointer;
+  }
+
+  /* styling the 3rd nav */
+  .nav33{
+    /* margin: 0;
+    padding: 0; */
+    background-color: #448e44;
+  }
+  .nav33 ul{
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav33 a{
+    text-decoration:none;
+    color: #ffe7cf;
+    display: block;
+  }
+  .nav33 .dropdown-content{
+    display: none;
+  }
+  .nav33 .dropdown:hover .dropdown-content{
+    display: block;
+    position: absolute;
+    background-color: #448e44a9;
+    padding: 15px;
+    min-width: 100px;
+  }
+  .nav33 .dropdown .dropdown-content:hover  {
+    background-color: #292929aa;
+  }
+  .nav33 .login-btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #85f0ac99;
+    color: #826926;
+    font-weight: bold;
+  }
+  .nav33 .login-btn:hover{
+    background-color: #85f0ac;
   }
 </style>
 <body>
@@ -128,7 +179,7 @@
         <li><a href="#">Products</a></li>
         <li><button class="login-btn" type="submit">Login</button></li>
       </ul>
-    </na
+    </nav>
   </div>
 </body>
 </html>
