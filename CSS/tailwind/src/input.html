@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>login page</title>
-    <link href="./output.css" rel="stylesheet">
-</head>
-<body class="bg-neutral-800">
-  <div class="flex justify-center items-center min-h-screen">
-    <div class="bg-yellow-200 flex flex-col p-8 justify-center items-center rounded-xl shadow-lg hover:shadow-yellow-500/50 w-[350px]">
-      <h2 class="text-3xl text-center font-extrabold m-2 ">login</h2>
-      <form class="flex flex-col justify-center items-start w-full">
-      <label class="font-mono text-base p-2" for="email">Email</label>
-      <input class="rounded-md p-2 bg-yellow-100 border-none hover:border-orange-300 shadow-sm shadow-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-600 w-full" type="email" placeholder="write your email">
-      <label class="font-mono text-base p-2" for="">Password</label>
-      <input class="rounded-md p-2 bg-yellow-100 border-none hover:border-orange-300 shadow-sm shadow-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-600 w-full" type="password" placeholder="write your password">
-    </form>
-    <button class="mt-4 flex justify-center items-center bg-yellow-500 hover:bg-yellow-600 rounded-md py-1 w-1/4" type="submit">login</button>
-    <h3 class="text-sm font-thin text-yellow-500 hover:text-yellow-700 cursor-pointer underline underline-offset-1">haven't any account! create a new one.</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-neutral-800">
+    <div class="flex justify-center items-center min-h-screen">
+      <div
+        class="bg-yellow-200 flex flex-col p-8 justify-center items-center rounded-xl shadow-lg hover:shadow-yellow-500/50 w-65 sm:w-[350px]"
+      >
+        <h2 id="titleb" class="text-3xl text-center font-extrabold m-2">Login</h2>
+        <form class="flex flex-col justify-center items-start w-full">
+          <label id="email" class="font-mono text-base p-2" for="email">Email</label>
+          <input id="put-value"
+            class="rounded-md p-2 bg-yellow-100 hover:bg-orange-100/70 border-none hover:border-orange-300 shadow-sm shadow-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-600 w-full"
+            type="email"
+            placeholder="write your email"
+          />
+          <label class="font-mono text-base p-2" for="">Password</label>
+          <input id="put-value"
+            class="rounded-md p-2 bg-yellow-100 hover:bg-orange-100/70 border-none hover:border-orange-300 shadow-sm shadow-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-600 w-full"
+            type="password"
+            placeholder="write your password"
+          />
+        </form>
+        <button id="login-btn"
+          class="mt-4 flex justify-center items-center bg-yellow-500 hover:bg-yellow-600 rounded-md py-1 w-1/4"
+          type="submit"
+        >
+          login
+        </button>
+        <h3
+          class="text-sm font-thin text-yellow-500 hover:text-yellow-700 cursor-pointer underline underline-offset-1"
+        >
+          haven't any account! create a new one.
+        </h3>
+      </div>
     </div>
-  </div>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>

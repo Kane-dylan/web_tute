@@ -50,14 +50,33 @@
   button:hover{
     background-color: blueviolet;
   }
+  .highlight{
+    background-color: aqua;
+    color: red;
+    font-weight: bold;
+  }
 </style>
 <body>
   <div class="card">
-    <h2>Login</h2>
-    <form>
-      <input type="email" name="" id="" placeholder="Email">
+    <h2 id="change-color">Login</h2>
+    <form id="element">
+      <input type="email" name="" id="email" placeholder="Email">
       <input type="password" name="" id="" placeholder="password">
-      <button type="submit">Login</button>
+      <button id="submit" type="button">Login</button>
+      <h2 id="items">add items</h2>
+      <ul id="cart">
+        <li>bread</li>
+        <li>milk</li>
+      </ul>
+      <button id="itemsRemove" type="button">remove items</button>
+      <ul id="tea">
+        <li id="teaItem">black tea</li>
+        <li id="teaItem">silver tea</li>
+        <li id="teaItem">coffee</li>
+        <li id="teaItem">chai</li>
+      </ul>
+
   </div>
+  <script src="./script.js"></script>
 </body>
 </html>
