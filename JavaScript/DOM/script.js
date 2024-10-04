@@ -18,8 +18,23 @@ document.getElementById("itemsRemove").addEventListener("click", function () {
   cart.lastElementChild.remove();
 });
 
-document.getElementById("tea").addEventListener("click",function(event){
- if(event.target && event.target.matches("teaItem")){
-  alert(event.target.textContent)
- }
+document.getElementById("tea").addEventListener("click", function (event) {
+  if (event.target && event.target.matches("teaItem")) {
+    alert(event.target.textContent);
+  }
+});
+
+document.getElementById("form").addEventListener("submit", function(event){
+    event.preventDefault();
+    let feedback = document.getElementById("feedback").value;
+    document.getElementById("feedbackDisplay").textContent =`Feedback is: ${feedback}`
+})
+
+document.addEventListener("DOMContentLoaded", function(){
+  document.getElementById("domLoading").textContent=`dom content fully loaded`;
+})
+
+document.getElementById("toggle").addEventListener("click", function(){
+  let domLoading = document.getElementById("domLoading")
+  domLoading.classList.toggle("highlight")
 })

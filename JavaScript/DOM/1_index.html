@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=`, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login page</title>
 </head>
 <style>
@@ -19,7 +19,7 @@
     background-color: aquamarine;
     margin: 5px;
     border-radius: 10px;
-    height: 200px;
+    height: 100vh;
     width: 300px;
     padding-inline: 20px;    
   }
@@ -76,6 +76,15 @@
         <li id="teaItem">chai</li>
       </ul>
 
+    </form>
+    <form id="form">
+      <label for="feedback">Write your feedback:</label>
+      <input id="feedback" type="text"/>
+      <button type="submit">Post feedback</button>
+    </form>
+    <p id="feedbackDisplay"></p>
+    <p id="domLoading">dom haven't loaded yet</p>
+    <button id="toggle">highlight</button>
   </div>
   <script src="./script.js"></script>
 </body>
