@@ -16,6 +16,8 @@ function blogCommentData (){
 async function blogData(){
   try {
     console.log("Fetching blog data...");
+
+  // have to convert it into Promise.all()
     const postData=await blogPostData()
     const commentData=await blogCommentData()
     console.log("Blog posted successful");

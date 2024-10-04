@@ -1,3 +1,4 @@
+// closure is a function which remember the env which is created;
 function outer() {
   let count = 9
   return function (){
