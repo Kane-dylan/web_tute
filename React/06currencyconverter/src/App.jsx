@@ -66,7 +66,7 @@ function App() {
             />
           </div>
           <button 
-          className="w-full border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5" type="submit">Convert</button>
+          className="w-full border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5" type="submit">Convert {from} to {to}</button>
         </form>
       </div>
     </div>
