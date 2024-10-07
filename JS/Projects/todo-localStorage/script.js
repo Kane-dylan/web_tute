@@ -1,11 +1,11 @@
-document.addEventListener("DOMContentLoaded",()=>{
+document.addEventListener("DOMContentLoaded", () => {
   const todoInput = document.getElementById("todo-input");
   const addTaskBtn = document.getElementById("add-task-btn");
   const todoList = document.getElementById("todo-list");
 
-  let tasks = JSON.parse(localStorage.getItem('tasks')) ||[];
+  let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
-  tasks.forEach((tasks)=>renderTasks(tasks))
+  tasks.forEach((tasks) => renderTasks(tasks));
 
   addTaskBtn.addEventListener("click", () => {
     const taskText = todoInput.value.trim();
@@ -18,16 +18,38 @@ document.addEventListener("DOMContentLoaded",()=>{
     };
     tasks.push(newTask);
     saveTask();
+    renderTasks(newTask);
     todoInput.value = "";
     console.log(tasks);
   });
 
-  function renderTasks(){
-    console.log(tasks);
+  function renderTasks(task) {
+    const li = document.createElement("li");
+    li.setAttribute("date-id", task.id);
+    if (task.completed) li.classList.add("completed");
+    li.innerHTML = `
+    <span>${task.text}</span>
+    <button>Delete</button>
+    `;
+    li.addEventListener("click", (e) => {
+      if (e.target.tagName === "BUTTON") return;
+      task.completed = !task.completed;
+      li.classList.toggle("completed");
+      saveTask();
+    });
+
+    li.querySelector("button").addEventListener("click", (e) => {
+      e.stopPropagation();
+      tasks = tasks.filter((t) => t.id !== task.id);
+      li.remove();
+      saveTask();
+    });
+
+    console.log(li);
+    todoList.appendChild(li);
   }
 
   function saveTask() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }
-
-})
+});
