@@ -1,0 +1,61 @@
+body{
+  background-color: black;
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  background-color: #0a0a42;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+#todo-input ,#add-task-btn{
+  padding: 5px ;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #28284d;
+  color: antiquewhite;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.div > .button.button{
+  background-color: #3d0668;
+}
+
+.button:hover{
+  background-color: #050533;
+}
+
+#todo-input:focus{
+  outline:none;
+  background-color: #050533;
+}
+
+#todo-list{
+  list-style: none;
+  background-color: #28284d;
+  padding: 5px;
+  border-radius: 5px;
+  width: 87%;
+  margin: 20px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+.list-content, .button {
+  display: inline-block;
+  vertical-align: middle;
+}
