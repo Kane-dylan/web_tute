@@ -71,7 +71,7 @@ ul:empty{
 }
 
 #todo-list li button {
-  background-color: #3d0668;
+  background-color: #7a0505;
   border: none;
   color: antiquewhite;
   border-radius: 5px;
@@ -80,7 +80,7 @@ ul:empty{
 }
 
 #todo-list li button:hover {
-  background-color: #050533;
+  background-color: #b10000;
 }
 
 .completed  {
