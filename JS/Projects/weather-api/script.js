@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     const data=await response.json()
     return data
   }
-
+// this will be called after the fetchWeatherData
   function displayWeatherData(data){
     console.log(data);
     const {name, main, weather}= data
