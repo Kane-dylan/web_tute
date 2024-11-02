@@ -4,6 +4,8 @@ git status // checking git status
 git init // start the git
 git add (file name ) //adding files to git tracker
 git commit -m "write your message" // for writing commit message
+git commit -am "writhe commit message"  // this will add and commit at a time 
+git branch -M rename // it renames the branch
 
 
 ## intermediate commands  
