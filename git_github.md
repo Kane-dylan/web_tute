@@ -7,4 +7,5 @@ git commit -m "write your message"  // for writing commit message
 
 git branch // for checking branches 
 git checkout  -b (branch name)  // cheating a new branch and switch to it 
-git diff --staged //it defers the 
+git diff --staged/HEAD  //it defers the  same  file in different timeline 
+git log & git log --oneline  //for checking git commit logs in multiLine & oneLine
