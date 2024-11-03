@@ -1,5 +1,5 @@
 const fs = require("fs");
-const filePath = "./tasks.json";
+const filePath = "./Nodejs/tasks.json";
 
 
 const loadTask =() =>{
@@ -18,8 +18,17 @@ const saveTasks= (tasks)=>{
 }
 const addTask =(task)=>{
     const tasks =loadTask( )
-    tasks.push(tasks)
+    tasks.push({task})
     saveTasks(tasks)
+    console.log("Task added", task);
+    
+}
+
+const listTask =() => {
+  const tasks = loadTask();
+  tasks.forEach((task, index) => {
+    console.log(`${index + 1}. ${task.task}`);
+  });
 }
 
 const command =process.argv[2]
