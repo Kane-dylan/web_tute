@@ -2,15 +2,15 @@ const fs = require("fs");
 const filePath = "./Nodejs/tasks.json";
 
 
-// const loadTask =() =>{
-//   try {
-//     const dataBuffer=fs.readFileSync(filePath)
-//     const dataJSON=dataBuffer.toString()
-//     return JSON.parse(dataJSON)
-//   } catch (error) {
-//     return[]
-//   }
-// }
+const loadTask =() =>{
+  try {
+    const dataBuffer=fs.readFileSync(filePath)
+    const dataJSON=dataBuffer.toString()
+    return JSON.parse(dataJSON)
+  } catch (error) {
+    return[]
+  }
+}
 
 const saveTasks= (tasks)=>{
     const dataJSON =JSON.stringify(tasks)
