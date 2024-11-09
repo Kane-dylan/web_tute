@@ -16,13 +16,13 @@ const saveTasks= (tasks)=>{
     const dataJSON =JSON.stringify(tasks)
     fs.writeFileSync(filePath,dataJSON)
 }
-const addTask =(task)=>{
-    const tasks =loadTask( )
-    tasks.push({task})
-    saveTasks(tasks)
-    console.log("Task added", task);
+// const addTask =(task)=>{
+//     const tasks =loadTask( )
+//     tasks.push({task})
+//     saveTasks(tasks)
+//     console.log("Task added", task);
     
-}
+// }
 
 const listTask =() => {
   const tasks = loadTask();
