@@ -31,6 +31,13 @@ const listTask =() => {
   });
 }
 
+const removeTask =(index) => {
+  const tasks = loadTask( )
+  tasks.splice(index, 1)
+  saveTasks(tasks)
+  console.log("Updated Task", listTask());
+}
+
 const command =process.argv[2]
 const argument =process.argv[3]
 
